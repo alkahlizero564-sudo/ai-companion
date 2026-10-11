@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "AI Companion",
+    "slug": "ai-companion",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "backgroundColor": "#111111"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "bundleIdentifier": "com.yourname.aicompanion",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "يحتاج التطبيق للوصول للصور عشان تحفظ أو ترفع الصور المولّدة.",
+        "NSPhotoLibraryAddUsageDescription": "يحتاج التطبيق يحفظ الصور والفيديوهات المولّدة في مكتبة الصور.",
+        "NSCameraUsageDescription": "يحتاج التطبيق للكاميرا لو حبيت ترفع صورة كمرجع للتوليد.",
+        "NSMicrophoneUsageDescription": "يحتاج التطبيق للمايك لو فعّلت إدخال صوتي في الشات."
+      }
+    },
+    "android": {
+      "package": "com.yourname.aicompanion",
+      "permissions": [
+        "INTERNET",
+        "ACCESS_NETWORK_STATE",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "CAMERA",
+        "RECORD_AUDIO",
+        "VIBRATE",
+        "POST_NOTIFICATIONS"
+      ]
+    },
+    "plugins": [
+      "expo-secure-store"
+    ]
+  }
+}
